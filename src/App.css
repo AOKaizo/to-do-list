@@ -1,38 +1,66 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: cornflowerblue;
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+  gap: 4vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: cornflowerblue;
+  place-self: center;
+  font-size: calc(30px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  background-color: cornflowerblue;
+  place-self: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.toDoTable {
+  border: 5px solid white;
+  width: 80vw;
+  height: auto;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toDoHeader {
+  border-bottom: 2px solid white;
 }
+
+.controlPanel {
+  display: flex;
+  
+  width: 80vw;
+  height: auto;
+  place-content: center;
+}
+
+.filterButton {
+  flex: 1 1 33%;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: inset;
+}
+
+.filterButton:hover {
+  flex: 1 1 33%;
+  background-color: lightgray;
+  border: 1px solid black;
+  box-shadow: inset;
+}
+
+.filterButton:active {
+  flex: 1 1 33%;
+  background-color: grey;
+  border: 1px solid black;
+  box-shadow: inset;
+}
+
+/* .toDoItem {
+} */
